@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GNDEC Admin Requests</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Sora:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='admin.css') }}" />
+</head>
+<body>
+  <div class="admin-shell">
+    <header class="admin-topbar">
+      <div>
+        <p class="eyebrow">Administration</p>
+        <h1>GNDEC Request Dashboard</h1>
+        <p class="subcopy">Review student document approval requests, update statuses, and keep admin notes in one place.</p>
+      </div>
+      <a href="/" class="back-link">Back to Chatbot</a>
+    </header>
+
+    <section class="stats-grid" id="statsGrid">
+      <div class="stat-card">
+        <span>Total Requests</span>
+        <strong id="statTotal">0</strong>
+      </div>
+      <div class="stat-card">
+        <span>Submitted</span>
+        <strong id="statSubmitted">0</strong>
+      </div>
+      <div class="stat-card">
+        <span>Under Review</span>
+        <strong id="statReview">0</strong>
+      </div>
+      <div class="stat-card">
+        <span>Approved</span>
+        <strong id="statApproved">0</strong>
+      </div>
+    </section>
+
+    <section class="admin-layout">
+      <aside class="admin-sidecard">
+        <h2>How To Use</h2>
+        <ul>
+          <li>Open any request card below.</li>
+          <li>Set the latest status from the dropdown.</li>
+          <li>Add an internal note for the office team.</li>
+          <li>Click update to save the admin action.</li>
+        </ul>
+      </aside>
+
+      <main>
+        <div id="adminMessage" class="admin-message">Admin backend is ready. Latest requests will appear below.</div>
+        <div id="adminRequestList" class="admin-request-list">
+          <div class="admin-empty">No requests submitted yet.</div>
+        </div>
+      </main>
+    </section>
+  </div>
+
+  <script src="{{ url_for('static', filename='admin.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<svg width="1700" height="860" viewBox="0 0 1700 860" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1700" y2="860" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#081220"/>
+      <stop offset="1" stop-color="#111D38"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#1F2B4F"/>
+      <stop offset="1" stop-color="#162240"/>
+    </linearGradient>
+    <linearGradient id="accent1" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#70A8FF"/>
+      <stop offset="1" stop-color="#7C6FFF"/>
+    </linearGradient>
+    <linearGradient id="accent2" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#49D0C5"/>
+      <stop offset="1" stop-color="#269C9C"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#020617" flood-opacity="0.42"/>
+    </filter>
+    <marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+      <path d="M1 1L7 4.5L1 8" stroke="#B3C8FF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    </marker>
+    <style>
+      .title { font: 700 42px 'Segoe UI', Arial, sans-serif; fill: #F8FAFC; }
+      .subtitle { font: 500 20px 'Segoe UI', Arial, sans-serif; fill: #C6D2F3; }
+      .label { font: 700 22px 'Segoe UI', Arial, sans-serif; fill: #F8FAFC; }
+      .body { font: 600 17px 'Segoe UI', Arial, sans-serif; fill: #E0E8FF; }
+      .chip { font: 700 15px 'Segoe UI', Arial, sans-serif; fill: #F8FAFC; }
+    </style>
+  </defs>
+
+  <rect width="1700" height="860" fill="url(#bg)"/>
+  <circle cx="1480" cy="110" r="170" fill="#213A7B" opacity="0.14"/>
+  <circle cx="180" cy="730" r="190" fill="#1C3270" opacity="0.13"/>
+
+  <text x="86" y="88" class="title">Testing Process</text>
+  <text x="86" y="124" class="subtitle">Short and clear testing flow for the GNDEC chatbot project</text>
+
+  <rect x="76" y="184" width="1548" height="462" rx="30" fill="rgba(19,29,57,0.82)" stroke="#40528F"/>
+
+  <rect x="110" y="316" width="220" height="126" rx="24" fill="url(#panel)" stroke="#465994" filter="url(#shadow)"/>
+  <rect x="136" y="338" width="92" height="34" rx="17" fill="url(#accent1)"/>
+  <text x="163" y="361" class="chip">Step 1</text>
+  <text x="138" y="400" class="label">Test Planning</text>
+  <text x="138" y="430" class="body">Define test cases</text>
+
+  <rect x="368" y="316" width="220" height="126" rx="24" fill="url(#panel)" stroke="#465994" filter="url(#shadow)"/>
+  <rect x="394" y="338" width="92" height="34" rx="17" fill="url(#accent2)"/>
+  <text x="421" y="361" class="chip">Step 2</text>
+  <text x="396" y="400" class="label">Module Testing</text>
+  <text x="396" y="430" class="body">Check each module</text>
+
+  <rect x="626" y="316" width="220" height="126" rx="24" fill="url(#panel)" stroke="#465994" filter="url(#shadow)"/>
+  <rect x="652" y="338" width="92" height="34" rx="17" fill="url(#accent1)"/>
+  <text x="679" y="361" class="chip">Step 3</text>
+  <text x="654" y="400" class="label">Integration Testing</text>
+  <text x="654" y="430" class="body">Verify module interaction</text>
+
+  <rect x="884" y="316" width="220" height="126" rx="24" fill="url(#panel)" stroke="#465994" filter="url(#shadow)"/>
+  <rect x="910" y="338" width="92" height="34" rx="17" fill="url(#accent2)"/>
+  <text x="937" y="361" class="chip">Step 4</text>
+  <text x="912" y="400" class="label">System Testing</text>
+  <text x="912" y="430" class="body">Validate full workflow</text>
+
+  <rect x="1142" y="316" width="220" height="126" rx="24" fill="url(#panel)" stroke="#465994" filter="url(#shadow)"/>
+  <rect x="1168" y="338" width="92" height="34" rx="17" fill="url(#accent1)"/>
+  <text x="1195" y="361" class="chip">Step 5</text>
+  <text x="1170" y="400" class="label">UAT Testing</text>
+  <text x="1170" y="430" class="body">End-user validation</text>
+
+  <rect x="1400" y="316" width="190" height="126" rx="24" fill="url(#panel)" stroke="#465994" filter="url(#shadow)"/>
+  <rect x="1426" y="338" width="92" height="34" rx="17" fill="url(#accent2)"/>
+  <text x="1453" y="361" class="chip">Step 6</text>
+  <text x="1428" y="400" class="label">Fixes</text>
+  <text x="1428" y="430" class="body">Improve issues</text>
+
+  <line x1="330" y1="380" x2="360" y2="380" stroke="#B3C8FF" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <line x1="588" y1="380" x2="618" y2="380" stroke="#B3C8FF" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <line x1="846" y1="380" x2="876" y2="380" stroke="#B3C8FF" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <line x1="1104" y1="380" x2="1134" y2="380" stroke="#B3C8FF" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <line x1="1362" y1="380" x2="1392" y2="380" stroke="#B3C8FF" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+
+  <rect x="602" y="714" width="500" height="92" rx="24" fill="url(#panel)" stroke="#465994" filter="url(#shadow)"/>
+  <text x="632" y="751" class="label">Final Result</text>
+  <text x="632" y="783" class="body">Stable and verified chatbot ready for deployment</text>
+
+  <path d="M1495 442V690H1122" stroke="#B3C8FF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none" marker-end="url(#arrow)"/>
+</svg>

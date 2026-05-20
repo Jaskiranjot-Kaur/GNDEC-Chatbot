@@ -1,0 +1,384 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["hi", "hello", "hey", "hii", "good morning", "good evening", "hy", "hello chatbot"],
+      "responses": [
+        "Hello! Welcome to the GNDEC College Helpdesk Chatbot. I am here to help you with college-related information such as admissions, fee structure, timetables, departments, hostel facilities, exams, scholarships, placements, and important official links. Please let me know what you would like to know.",
+        "Hi! It’s great to have you here. I can assist you with many college queries including admission process, fee details, class timetables, exam datesheets, department information, hostel details, and student services. Please type your question and I will do my best to guide you.",
+        "Hey! I’m your college helpdesk assistant. You can ask me about admissions, academic calendar, syllabus, exam portal, department contacts, hostel information, and much more. How may I help you today?"
+      ],
+      "links": []
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["bye", "goodbye", "see you", "ok bye", "talk later", "exit", "bye chatbot"],
+      "responses": [
+        "Goodbye! I hope I was able to help you. If you need any more information related to the college, admissions, fees, hostel, exams, or departments, feel free to return anytime.",
+        "Bye! Thank you for using the GNDEC College Helpdesk Chatbot. Whenever you need guidance about college-related matters, I will be here to help you.",
+        "See you later! If you have any more questions about your college, timetable, notices, admission process, or official links, you can always come back and ask."
+      ],
+      "links": []
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["thank you", "thanks", "thnx", "ty", "thankyou", "thanks a lot"],
+      "responses": [
+        "You’re most welcome! I’m glad I could help you. If you want, you can also ask me about admissions, fee structure, timetables, hostel, exams, scholarships, or placements.",
+        "Happy to help! If you have any other college-related questions, feel free to ask anytime.",
+        "It’s my pleasure to assist you. Please let me know if you need help with any other college information."
+      ],
+      "links": []
+    },
+    {
+      "tag": "faq_general",
+      "patterns": ["help", "what can you do", "how can you help me", "available options", "what do you do", "services"],
+      "responses": [
+        "I can help you with many types of college-related information. For example, you can ask me about admission process, eligibility, fee structure, hostel details, scholarship information, class timetables, academic calendar, exam datesheet, syllabus, department details, placement information, and important official links. Please ask your question in simple words and I will guide you.",
+        "I’m designed to assist students, parents, and visitors with common college queries. You can ask me about admissions, courses, departments, exam portal, result guidance, fee payment, hostel, transport, scholarships, notices, and certificates. If you are not sure what to ask, simply type a topic like 'admission process' or 'CSE timetable'.",
+        "I can provide guidance related to college admissions, fees, academic resources, hostels, departments, placements, student services, and official portals. You may also ask for links to important pages such as timetable, admission portal, exam portal, or downloads section."
+      ],
+      "links": []
+    },
+    {
+      "tag": "college_name",
+      "patterns": ["what is the college name", "tell me college name", "which college is this", "full form of gndec", "college full form"],
+      "responses": [
+        "The full name of the college is Guru Nanak Dev Engineering College, commonly known as GNDEC. It is a well-known engineering institution and you can find more official information on the college website.",
+        "This college is Guru Nanak Dev Engineering College, also called GNDEC. For official details, departments, academic notices, and student resources, you may visit the main website.",
+        "The college name is Guru Nanak Dev Engineering College. If you want, I can also help you with official website link, departments, courses, or admission information."
+      ],
+      "links": ["https://www.gndec.ac.in/"]
+    },
+    {
+      "tag": "official_website",
+      "patterns": ["official website", "college website", "main website", "open official website", "gndec website"],
+      "responses": [
+        "Sure! You can visit the official GNDEC website for authentic and updated information related to academics, departments, notices, student services, and administration. Please use the official link provided below.",
+        "Of course! The official college website is the best place to check notices, admissions, academics, departments, and important updates. Please open the official website link below.",
+        "Here is the official college website. It is recommended to use this source whenever you need the latest and most accurate information about the college."
+      ],
+      "links": ["https://www.gndec.ac.in/"]
+    },
+
+
+    {
+      "tag": "fee_structure",
+      "patterns": [
+        "gndec fees",
+        "fee structure",
+        "college fees",
+        "yearly fees",
+        "semester fees",
+        "fee details",
+        "gndec fee structure",
+        "btech fees",
+        "mba fees",
+        "mca fees",
+        "mtech fees",
+        "bca fees",
+        "bba fees",
+        "bcom fees"
+      ],
+      "responses": [
+        "The fee structure for Guru Nanak Dev Engineering College (GNDEC), Ludhiana for the 2025–2026 session varies by program, with typical first-year academic fees ranging from approximately ₹74,539 to ₹1.21 Lakhs.\n\nEstimated Total Academic Fees (2025–2026)\nThe total fee for complete course durations is generally as follows:\nCourse \tTotal Academic Fees (Approx.)\tDuration\nB.Tech\t₹4.49 Lakhs\t4 Years\nB.Tech (Lateral Entry)\t₹3.32 Lakhs\t3 Years\nB.Arch\t₹3.00 Lakhs - ₹4.42 Lakhs\t5 Years\nBCA / BBA\t₹2.09 Lakhs\t3 Years\nB.Com\t₹2.30 Lakhs\t3 Years\nMBA / MCA\t₹2.06 Lakhs\t2 Years\nM.Tech\t₹1.62 Lakhs\t2 Years\n\nSemester Fee Details (January – June 2026 Session)\nAccording to the latest college notices, semester fees for ongoing batches (e.g., Batch 2025-26) are deposited through the college's Academic Portal.\nBCA/BBA/B.Voc (Day Scholars): Approximately ₹33,650 for General/Boys and ₹33,650 for General/Girls.\nSC/ST (Eligible) Students: Fees can be significantly lower, starting around ₹5,000 to ₹8,000 per semester.\nRefundable Security: A security fee (approx. ₹4,000 for academic and ₹2,000 for hostel) is usually payable at the time of admission.\n\nHostel and Mess Fees\nHostel charges are separate and typically paid per semester:\nHostel Fee: Approximately ₹11,113 to ₹19,300 per semester depending on gender and room type.\nMess Fee: Estimated at ₹15,200 per semester.\n\nPayment Methods\nFees are accepted through the following modes:\nOnline: Credit Card, Debit Card, Net Banking, and UPI via the GNDEC Payment Gateway.\nOffline: NEFT/RTGS or Demand Draft (DD) in favour of \"Principal, Guru Nanak Dev Engg. College, Ludhiana\" payable at Punjab and Sind Bank, Gill Branch. Cheques are not accepted.",
+        "The fee structure at Guru Nanak Dev Engineering College (GNDEC), Ludhiana, for the 2026-27 session varies by course and category, with the total academic fee for the flagship B.Tech program being approximately ₹4.49 Lakhs.\n\nAcademic Fee Structure (General Category)\nFees are typically collected on a per-semester basis. Odd semesters (1st, 3rd, etc.) often include higher one-time charges compared to even semesters.\nCourse \t1st Year Fee (Approx.)\tTotal Course Fee (Approx.)\nB.Tech (CSE, IT, ECE, Civil, ME, EE)\t₹1,24,639\t₹4.49 Lakhs\nB.Tech Lateral Entry (2nd Year Entry)\t₹1,24,639\t₹3.32 Lakhs - ₹3.39 Lakhs\nB.Architecture (B.Arch)\t₹1,01,539\t₹4.42 Lakhs\nMBA / MCA\t₹1,14,739\t₹2.06 Lakhs\nBBA / BCA\t₹70,239\t₹2.09 Lakhs\nB.Com\t₹48,500\t₹2.3 Lakhs\nM.Tech\t₹1,10,624\t₹1.62 Lakhs\n\nHostel & Additional Charges\nLiving on campus involves separate costs for accommodation and meals.\nHostel Rent: Approximately ₹14,272 per semester for boys and ₹11,908 for girls.\nMess Charges: Roughly ₹15,200 per semester.\nSecurity Deposits: A refundable mess security of ₹7,000 is usually required at the time of admission.\nTotal Annual Cost (with Hostel): Students should budget between ₹1.5 Lakhs and ₹1.8 Lakhs per year including academic fees.\n\nScholarships & Fee Concessions\nGNDEC provides several avenues to reduce financial burden based on category or merit:\nPost Matric Scholarship (PMS): SC/ST candidates from Punjab with eligible family income can have their fees significantly reduced, sometimes to as low as ₹10,000–₹12,500 per semester.\nTuition Fee Waiver (TFW): Eligible Punjab residents (based on family income) may pay approximately ₹11,450–₹17,190 per semester.\nSikh Minority Quota: Candidates who qualify for the Sikh Religion Exam (SRE) are eligible for seats reserved specifically for the community.\nAlumni & Merit Scholarships: Various batches and trusts provide annual aid ranging from ₹10,000 to full fee coverage for needy and meritorious students.\n\nFees are primarily deposited through the GNDEC Academic Portal using online modes like NEFT, UPI, or Credit/Debit cards.",
+        "If you want GNDEC fees, you can also check course-wise and semester-wise fee details along with hostel and payment information. Fee structure can vary by program, category, and session, so students usually see academic fees, refundable security, hostel fees, mess charges, and online/offline payment options separately. You can also ask specifically for B.Tech fees, hostel fees, semester fee details, or scholarship-related fee concessions."
+      ],
+      "links": [
+        "https://www.gndec.ac.in/",
+        "https://admission.gndec.ac.in/",
+        "https://academics.gndec.ac.in/"
+      ]
+    },
+    {
+      "tag": "college_location",
+      "patterns": [
+        "where is the college located",
+        "college address",
+        "gndec location",
+        "where is gndec",
+        "college address details",
+        "gndec address",
+        "location of gndec"
+      ],
+      "responses": [
+        "Guru Nanak Dev Engineering College (GNDEC) is located on Gill Road (Ludhiana-Malerkotla State Highway) in the Gill Park area of Ludhiana, Punjab.\n\nKey Location Details\nAddress: Gill Road, Gill Park, Ludhiana, Punjab 141006, India.\nCampus Size: The institution is situated on a sprawling 86 to 88-acre campus.\nMajor Landmark: The college is located right next to the Gill Canal (Sidhwan Canal).\n\nProximity to Transit Hubs\nLudhiana Railway Station: Approximately 6 to 8 km away.\nAmar Shaheed Sukhdev Interstate Bus Terminal: Roughly 5 to 6 km away.\nLudhiana Airport (Sahnewal): About 15 km away.\n\nHow to Reach\nThe college is well-connected by public and private transport. For those coming from outside the city, Ludhiana is roughly 90 km from Chandigarh and 300 km from New Delhi.",
+        "GNDEC is situated on Gill Road in Ludhiana, Punjab, in the Gill Park area. It is known for its large campus and is located near the Gill Canal, also called the Sidhwan Canal. Students and visitors can reach it easily from Ludhiana railway station, bus terminal, and Sahnewal airport."
+      ],
+      "links": [
+        "https://www.gndec.ac.in/"
+      ]
+    },
+    {
+      "tag": "admission_overview",
+      "patterns": [
+        "admission process",
+        "how to take admission",
+        "admission details",
+        "admission procedure",
+        "how to apply",
+        "gndec admission",
+        "admission 2026",
+        "2026-27 admission"
+      ],
+      "responses": [
+        "Guru Nanak Dev Engineering College (GNDEC) in Ludhiana has opened admissions for the 2026-27 session for various undergraduate and postgraduate programs. The college has recently established a new dedicated Admission Cell to handle the process.\n\nHow to Apply\nThe primary application process is online through the official portal:\nOfficial Admission Portal: admission.gndec.ac.in.\nCounseling Fees: A non-refundable processing fee of ₹2,000 is typically required for centralized online counseling. For some direct college-level applications, a fee of ₹1,200 (₹200 registration + ₹1,000 processing) may apply.\nKey Steps:\nRegister on the GNDEC Admission Portal.\nFill in personal and academic details.\nUpload required documents and \"Lock\" the form.\nGenerate a File Number to ensure the application is considered.\n\nCourse Eligibility and Selection\nAdmissions are merit-based, either through national/state-level exams or qualifying exam marks.\nCourse \tEntrance Exam(s)\tEligibility Highlights\nB.Tech\tJEE Main\t10+2 with Physics & Maths (Min. 45% for General)\nB.Arch\tNATA\t10+2 with 50% aggregate\nMBA\tCMAT\tBachelor's Degree with 50%\nMCA\tPTU MCA / Merit\tBachelor's with Maths at 10+2 or Graduation\nM.Tech\tGATE\tB.Tech in relevant field with 50%\nBBA / BCA / B.Com\tQualifying Merit\t10+2 in any stream (Specific marks for B.Com)\n\nAdmission Categories & Counseling\nSeat Allocation: 85% of seats are reserved for Punjab State candidates, and 15% are open to Other States.\nCounseling Rounds:\nIKGPTU Centralized Counseling: Initial rounds are conducted online by I.K. Gujral Punjab Technical University.\nDirect/Spot Counseling: Vacant seats after centralized rounds are filled directly by GNDEC at the college auditorium.\nSikh Minority Quota: Candidates must qualify for the Sikh Religion Exam (SRE) to claim seats under this quota.\n\nHelpdesk & Contacts\nFor specific queries, you can contact the admission helpline numbers provided by the college:\nB.Tech / M.Tech: 9041495448, 8968553073\nMBA / BBA: 9876156364, 9417992553\nBCA / MCA: 9876700810, 9417271184\nWhatsApp Helpline: 7347200448",
+        "If you want admission information for GNDEC, the college is taking applications for the 2026-27 session for different UG and PG programs. The application process is mainly online through the admission portal, where students register, fill in details, upload documents, lock the form, and generate a file number. Admission may happen through centralized counseling as well as direct or spot counseling for vacant seats."
+      ],
+      "links": [
+        "https://admission.gndec.ac.in/"
+      ]
+    },
+    {
+      "tag": "admission_eligibility",
+      "patterns": [
+        "admission eligibility",
+        "eligibility criteria",
+        "btech eligibility",
+        "who can apply for admission",
+        "course eligibility",
+        "gndec admission eligibility",
+        "2026 admission eligibility"
+      ],
+      "responses": [
+        "To be eligible for admission at Guru Nanak Dev Engineering College (GNDEC) for the 2026-27 session, you must meet both general academic requirements and specific entrance exam criteria.\n\nUndergraduate (UG) Programs\nB.Tech: 10+2 with Physics, Math, and a science elective (min. 45% Gen/40% SC/ST) + JEE Main score.\nB.Arch: 10+2 with Math (min. 50% aggregate) + valid NATA score.\nBBA/BCA: 10+2 (min. 50% Gen/45% reserved) based on merit.\nLateral Entry: 3-year Diploma/B.Sc. (min. 45% Gen/40% SC/ST).\n\nPostgraduate (PG) Programs\nMBA/MCA/M.Tech: Relevant bachelor's degree with 50% marks (45% for SC/ST), with MBA requiring CMAT and M.Tech preferring GATE qualifications.\n\nQuota & Other Specifics\nSikh Minority: 50% seats, requires passing the SRE with 40%.\nRural: Requires a certificate and proof of 5 years of rural schooling.\nResidency: 85% seats for Punjab residents, 15% for others.",
+        "Eligibility at GNDEC depends on the program you want to join. For engineering courses like B.Tech, students usually need 10+2 with Physics and Maths along with JEE Main. For B.Arch, NATA is required. For MBA, MCA, and M.Tech, graduation-based eligibility applies with specific marks and in some cases entrance exams. There are also category and quota conditions such as Sikh Minority, Rural, and Punjab residency rules."
+      ],
+      "links": [
+        "https://admission.gndec.ac.in/"
+      ]
+    },
+    {
+      "tag": "courses_offered",
+      "patterns": [
+        "courses offered",
+        "which courses are available",
+        "programs available",
+        "branches in college",
+        "available programs",
+        "gndec courses",
+        "what courses are offered"
+      ],
+      "responses": [
+        "Guru Nanak Dev Engineering College (GNDEC) offers a wide array of courses for the 2026-27 session, ranging from undergraduate engineering to doctoral research programs.\n\nUndergraduate (UG) Courses\nThese programs typically have a duration of 3 to 5 years.\nB.Tech (Bachelor of Technology): Available in disciplines such as:\nComputer Science & Engineering\nInformation Technology\nCivil Engineering\nMechanical Engineering\nElectrical Engineering\nElectronics & Communication Engineering\nRobotics and Artificial Intelligence\nProduction Engineering\nOther UG Degrees:\nB.Arch (Bachelor of Architecture)\nBBA (Bachelor of Business Administration)\nBCA (Bachelor of Computer Applications)\nB.Com (Bachelor of Commerce)\nB.Voc (Interior Design)\n\nPostgraduate (PG) Courses\nMost PG programs are 2-year full-time degrees.\nM.Tech (Master of Technology): Offered in full-time and part-time modes with specialisations including:\nStructural Engineering\nGeo-Technical Engineering\nEnvironmental Engineering\nPower Engineering\nComputer Science and Information Technology\nManagement & Computer Applications:\nMBA (Master of Business Administration)\nMCA (Master of Computer Applications)\nM.Sc: Programs in Physics and Chemistry.\n\nDiploma & Doctoral Programs\nPost Graduate Diplomas: 1-year courses in fields like VLSI Design, Artificial Intelligence & Machine Learning, Data Science, and Industrial Safety.\nPh.D.: Doctoral research is available in major engineering departments like Civil, Electrical, and Mechanical Engineering.\n\nFor more specific information or course brochures, you can visit the GNDEC Academics Page.",
+        "If you want to know GNDEC courses, the college offers UG, PG, diploma, and doctoral-level programs. Major areas include engineering, architecture, management, computer applications, commerce, science, and vocational courses. Students can choose from regular B.Tech branches, M.Tech specialisations, MBA, MCA, M.Sc, and research options depending on their eligibility and interest."
+      ],
+      "links": [
+        "https://www.gndec.ac.in/",
+        "https://academics.gndec.ac.in/",
+        "https://admission.gndec.ac.in/"
+      ]
+    },
+    {
+      "tag": "btech_courses",
+      "patterns": [
+        "btech courses",
+        "engineering branches",
+        "which btech branches are available",
+        "btech programs",
+        "btech stream",
+        "gndec btech courses",
+        "btech branches"
+      ],
+      "responses": [
+        "For the 2026-27 session, Guru Nanak Dev Engineering College (GNDEC) offers seven primary B.Tech specialisations. Total seat intake for regular 4-year programs is approximately 960 seats.\n\nB.Tech Specialisations & Seat Intake\nBranch \tSanctioned Intake\nComputer Science and Engineering\t300\nInformation Technology\t180\nElectrical Engineering\t120\nCivil Engineering\t120\nMechanical Engineering\t120\nElectronics & Communication Engineering\t90\nRobotics and Artificial Intelligence\t30\n\nAdditional B.Tech Options\nB.Tech Lateral Entry: For diploma or B.Sc. holders, direct admission to the 3rd semester (2nd year) is available across these branches.\nB.Tech for Working Professionals: Lateral entry programs specifically designed for working professionals are offered in Civil Engineering and Mechanical Engineering with an intake of 30 seats each.\nHonours & Minor Degrees: Students can pursue additional Minor or Honour degrees in specialised areas alongside their primary B.Tech major, aligned with the new National Education Policy (NEP) curriculum.\n\nKey Highlights for 2026 Admissions\nEntrance Exam: Admission is primarily based on JEE Main scores through IKGPTU centralized online counselling.\nFees: The total tuition fee for most 4-year B.Tech programs is approximately ₹4.49 Lakhs.\nReservation: 85% of seats are reserved for Punjab residents, and 15% are open to Other State.",
+        "GNDEC B.Tech courses include major engineering branches like CSE, IT, EE, Civil, Mechanical, ECE, and Robotics and Artificial Intelligence. The college also provides lateral entry options and some working professional pathways. Students may also get opportunities for honours and minor degrees under the NEP structure."
+      ],
+      "links": [
+        "https://admission.gndec.ac.in/",
+        "https://www.gndec.ac.in/"
+      ]
+    },
+    {
+      "tag": "hod_info",
+      "patterns": [
+        "who is hod",
+        "hod name",
+        "head of department",
+        "department head details",
+        "hod contact",
+        "cse hod",
+        "who is cse hod"
+      ],
+      "responses": [
+        "The Department of Computer Science and Engineering (CSE) at Guru Nanak Dev Engineering College (GNDEC) is currently led by Dr. Kiran Jyoti.\n\nHOD Profile: Dr. Kiran Jyoti\nDesignation: Professor and Head of Department.\nAcademic Qualification:\nPh.D. (CSE) from Shri JJT University, Rajasthan (2013).\nM.Tech. (CSE) from GNDEC, Ludhiana (2007).\nB.Tech. (CSE) from NIT Jalandhar (2000).\nExperience: She has over 25 years of teaching experience at GNDEC, having served in various capacities since 2000. She was promoted to Professor and Head in August 2025.\nResearch: Her research interests include roughly 60 publications in reputed journals.\n\nContact Information\nEmail: kiranjyotibains@gndec.ac.in or cse@gndec.ac.in.\nPhone: 0161-5064547 (Direct Office) or 0161-5064501 (Ext. 5064501).\nLocation: CSE Block, Guru Nanak Dev Engineering College, Ludhiana.\n\nDepartmental Leadership Team\nIn addition to the HOD, several senior professors hold key administrative roles within the department and college:\nDr. Parminder Singh: Professor (CSE) and Dean of Student Welfare.\nDr. Akshay Girdhar: Professor (IT) and Dean of Academics.\nDr. Jasbir Singh Saini: Associate Professor and HOD of Computer Applications (MCA).",
+        "If you are asking about the CSE HOD at GNDEC, the department is headed by Dr. Kiran Jyoti. Her academic background includes B.Tech from NIT Jalandhar, M.Tech from GNDEC, and Ph.D. in CSE. She has long teaching experience and holds the role of Professor and Head."
+      ],
+      "links": [
+        "https://cse.gndec.ac.in/",
+        "https://www.gndec.ac.in/"
+      ]
+    },
+    {
+      "tag": "exam_portal",
+      "patterns": [
+        "exam portal",
+        "open exam portal",
+        "where is exam portal",
+        "exam website",
+        "exam site",
+        "results portal",
+        "exam and results"
+      ],
+      "responses": [
+        "Official Exam & Results Portal\nThe primary portal for current students to access exam forms, date sheets, and result statuses is the GNDEC Exam Portal.\nAdmit Cards & Fee Slips: Active students can download their admit cards for end-semester examinations and generate semester fee slips via the GNDEC Academic Portal.\nResults: You can view result notifications and download result gazettes directly through the Official Results Page.",
+        "If you want the GNDEC exam portal, students generally use it for exam forms, datesheets, and result status. Admit cards and semester fee slips are usually handled through the academic portal, while result notifications and gazettes are available through the results page."
+      ],
+      "links": [
+        "https://exam.gndec.ac.in/",
+        "https://academics.gndec.ac.in/"
+      ]
+    },
+    {
+      "tag": "hostel_general",
+      "patterns": [
+        "hostel",
+        "hostel details",
+        "is hostel available",
+        "college hostel info",
+        "hostel information",
+        "gndec hostel",
+        "hostel overview"
+      ],
+      "responses": [
+        "Guru Nanak Dev Engineering College (GNDEC) provides residential facilities for approximately 1,200 students across four distinct hostels, each assigned to specific academic years or programs to maintain a structured environment.\n\nHostel Assignments\nRooms are typically allocated based on your year of study:\nHostel No. 1 (Boys): Generally for M.Tech (1st Year) students.\nHostel No. 2 (Boys): Assigned to B.Tech (2nd Year) and Lateral Entry (LEET) students.\nHostel No. 5 (Boys): Dedicated exclusively to B.Tech (1st Year) students to ensure a supportive start.\nHostel No. 4 (Girls): A common hostel for female students from all streams.\n\nFacilities & Amenities\nThe hostels offer essential services to support student life:\nRoom Features: Rooms typically accommodate 3–4 students in the first two years, with options for single rooms available for seniors (3rd year onwards).\nStandard Furniture: Each student is provided with a bed, almirah (wardrobe), study table, chair, and a fan.\nGeneral Utilities: Hostels are equipped with geysers for hot water, washing machines, water purifiers, and 24/7 power backup.\nRecreation: Every hostel features a common room with dish TV, indoor games (Chess, Badminton, Table Tennis), and newspapers.\nConnectivity: High-speed Wi-Fi is available throughout all hostel premises.\nSafety & Medical: The campus is monitored by CCTV cameras, and an ambulance is available on standby for emergencies.\n\nMess & Dining\nDining Halls: Each hostel has its own air-cooled and spacious dining hall.\nMeal Quality: Reviews are mixed; while some students find the food standard and hygienic, others describe it as average. The menu is varied and typically includes items like paneer and rajma multiple times a week.\nMonthly Mess Diet: The cost for meals is approximately ₹2,700–₹3,000 per month.\n\nHostel Fee Overview (Per Semester)\nFees vary slightly by program, but general estimates for the 2026 session are as follows:\nProgram \tBoys' Hostel Fee\tGirls' Hostel Fee\nB.Tech (1st Sem)\t₹19,300\t₹16,900\nB.Tech (Subsequent Semesters)\t~₹11,900–₹14,300\t~₹11,100–₹11,900\nMBA / MCA / M.Tech\t~₹11,963–₹16,963\t~₹11,963–₹16,963\nSecurity Deposit: A refundable security fee of ₹5,000–₹6,000 is usually payable at the time of initial admission.",
+        "If you want a hostel overview of GNDEC, the college provides separate hostels for boys and girls with room allotment based on year and program. Facilities usually include furniture, Wi-Fi, common rooms, water and power support, security, and mess arrangements. Fees depend on program, semester, and hostel category."
+      ],
+      "links": [
+        "https://www.gndec.ac.in/?q=node/147"
+      ]
+    },
+    {
+      "tag": "girls_hostel",
+      "patterns": [
+        "girls hostel",
+        "female hostel",
+        "ladies hostel",
+        "is girls hostel available",
+        "gndec girls hostel"
+      ],
+      "responses": [
+        "The Girls' Hostel (Hostel No. 4) at GNDEC is a common residence for all female students, including those in B.Tech, B.Arch, MBA, MCA, and M.Tech programs. It is designed to provide a secure and comfortable environment within the campus.\n\nKey Features & Facilities\nCapacity: Can accommodate approximately 350 students across multiple floors.\nSecurity: High priority is given to safety with 24/7 security guards, CCTV surveillance at entry/exit points, and strict gate timings (usually entry by 7:00 PM - 8:00 PM).\nAmenities:\nCommon Room: Equipped with an LCD TV, indoor games like table tennis and carrom, and daily newspapers.\nInternet: Campus-wide high-speed Wi-Fi connectivity.\nConvenience: On-site facilities include a water cooler with RO, geysers, a gym, and a cooperative mess system.\nMedical: A dispensary with a lady doctor is available for emergencies.\n\nFee Structure (Per Semester)\nThe girls' hostel fees are slightly lower than the boys' hostels.\nFirst Semester: Approximately ₹16,900 (includes refundable security).\nSubsequent Semesters: Ranges between ₹11,108 and ₹11,908.\nMess Charges: Roughly ₹2,800–₹3,200 per month, paid separately from the hostel rent.\n\nRoom Type\nFreshmen (1st Year) are typically allotted triple or quadruple sharing rooms.\nSenior students (3rd & 4th Year) may opt for double or single occupancy rooms based on availability and merit.\n\nHostel Administration\nWarden: Dr. Puneet Narang (Main warden) and Assistant Wardens manage day-to-day operations and student welfare.\nApplication: Current students can apply or renew their seats via the GNDEC Hostel Portal.",
+        "If you are asking about the girls hostel at GNDEC, Hostel No. 4 is the main hostel for female students from different programs. It focuses on security, comfort, and campus facilities, and includes mess, Wi-Fi, common room, medical support, and different room-sharing options depending on year and availability."
+      ],
+      "links": [
+        "https://www.gndec.ac.in/?q=node/147"
+      ]
+    },
+    {
+      "tag": "boys_hostel",
+      "patterns": [
+        "boys hostel",
+        "male hostel",
+        "gents hostel",
+        "is boys hostel available",
+        "gndec boys hostel"
+      ],
+      "responses": [
+        "Guru Nanak Dev Engineering College (GNDEC) provides three dedicated hostels for boys, accommodating roughly 850 outstation students. Each hostel is assigned based on the student's year and course of study to ensure a disciplined environment.\n\nHostel Assignments\nHostel \tApplicable Students\tPrimary Contact\nHostel No. 1\tM.Tech First Year\tMr. Kewal Singh\nHostel No. 2\tB.Tech (2nd Year) and Lateral Entry (LEET) students\tMr. Jagmail Singh\nHostel No. 5\tB.Tech (1st Year) students\tMr. Gurdev Singh\n\nFee Structure (Session Jan–June 2026)\nHostel fees are payable per semester via the GNDEC Academic Gateway.\nHostel Rent: Approximately ₹14,272 per semester.\nMess Fee: Fixed at ₹15,200 per semester (approx. ₹2,700–₹3,000 monthly).\nOne-time/Refundable Charges:\nMess Security: ₹7,000 (Refundable).\nHostel Security: ₹5,000 (Refundable, paid at admission).\nServant & Utensil Fees: Approximately ₹8,000 combined.\n\nFacilities & Room Types\nRoom Occupancy: First and second-year students typically stay in triple or four-sharing rooms. Single rooms are generally available starting from the 3rd year.\nEssential Furniture: Each student receives a bed, almirah (wardrobe), study table, chair, and fan.\nAmenities: Hostels are equipped with high-speed Wi-Fi, backup power supply, water purifiers, washing machines, and geysers.\nRecreation: Each hostel features a common room with Dish TV, newspapers, and indoor sports like Table Tennis and Chess.\nSecurity & Safety: Monitored by CCTV cameras and 24/7 security personnel. An ambulance is available for medical emergencies.\n\nImportant Rules\nAttendance: Students must be present for night attendance as per specified timings.\nProhibitions: Ragging, smoking, drinking, and drug use are strictly prohibited.\nVisitors: Unauthorized persons are not allowed to stay overnight.",
+        "If you want boys hostel details at GNDEC, the college provides multiple dedicated hostels for male students depending on year and course. Hostel fees usually include rent and separate mess charges, and students get facilities like Wi-Fi, furniture, security, common room, utilities, and structured hostel rules."
+      ],
+      "links": [
+        "https://www.gndec.ac.in/?q=node/147"
+      ]
+    },
+    {
+      "tag": "library_general",
+      "patterns": [
+        "library",
+        "college library",
+        "library details",
+        "about library",
+        "gndec library",
+        "library overview"
+      ],
+      "responses": [
+        "The Central Library at Guru Nanak Dev Engineering College (GNDEC) is a fully computerized, air-conditioned facility that supports the academic and research needs of the institute with a collection of over 97,000 volumes.\n\nLibrary Timings\nWeekdays (Monday to Friday): 8:00 AM – 8:00 PM.\nSaturdays: 9:00 AM – 5:00 PM (referral services only).\nClosed: Sundays and Gazetted Holidays.\n\nKey Sections and Facilities\nReading Room: A dedicated space on the ground floor where students can bring their own books for self-study.\nBook Bank Section: Provides a complete set of textbooks to SC/ST students for an entire semester.\nWelfare Section: Specifically maintains books for financially weaker sections of students.\nDigital Resources: Access to over 500,000 e-resources, including peer-reviewed e-journals and e-books from publishers like IEEE, Springer, and Science Direct.\nInter-Library Loan: Connected with DELNET, allowing students to borrow books or documents not available in the central collection.\n\nMembership and Borrowing Rules\nEligibility: Open to all students, faculty, and staff. No membership fee is charged.\nB.Tech/PG Entitlement: Students can typically borrow 4 books for a duration of 14 days.\nOverdue Fines: A fine of ₹1 per day is charged for books returned after the due date.\nLoss of Books: If a book is lost or damaged, the borrower must pay twice the cost of the book or replace it with a new one.",
+        "If you are asking about the GNDEC library, it is a large centralized academic library with physical books, digital resources, reading spaces, book bank support, and borrowing facilities for students, faculty, and staff."
+      ],
+      "links": [
+        "https://library.gndec.ac.in/",
+        "https://www.gndec.ac.in/"
+      ]
+    },
+    {
+      "tag": "library_timings",
+      "patterns": [
+        "library timing",
+        "when does library open",
+        "library hours",
+        "library schedule",
+        "gndec library timing"
+      ],
+      "responses": [
+        "Library Timings\nMain Library: 8:00 AM – 8:00 PM (Monday to Friday).\nSaturday: 9:00 AM – 5:00 PM.\nSunday/Holidays: Closed.\nReading Room: Often remains open for extended hours (until 10:00 PM or later) during final examinations.",
+        "If you want the GNDEC library timing, the main library usually runs from morning to evening on weekdays, has shorter timing on Saturday, and remains closed on Sundays and holidays. During final exams, the reading room may remain open for longer hours."
+      ],
+      "links": [
+        "https://library.gndec.ac.in/",
+        "https://www.gndec.ac.in/"
+      ]
+    },
+    {
+      "tag": "notices",
+      "patterns": [
+        "latest notices",
+        "college notices",
+        "notice board",
+        "recent notifications",
+        "gndec notices",
+        "official notices"
+      ],
+      "responses": [
+        "The official notices for Guru Nanak Dev Engineering College (GNDEC) are hosted across several specialized portals depending on the subject:\n\nPrimary Notice Portals\nERP Noticeboard: erp.gndec.ac.in/notice\nThis is the main hub for official administrative notices, readmission alerts, and general campus updates.\nExamination Portal: exam.gndec.ac.in\nDirectly contains notices regarding final datesheets, special chance exams, and result announcements.\nAdmission Notice Section: admission.gndec.ac.in/important_notices.php\nSpecifically for new applicants regarding spot counselling and document requirements.\n\nDepartment-Specific Notice Links\nYou can also find notices tailored to specific engineering branches:\nApplied Sciences: appsc.gndec.ac.in/notices\nInformation Technology: it.gndec.ac.in\nSessional Notices: gndec.ac.in/?q=node/162 (Contains datesheets and syllabi for all departments)\n\nDirect Links to Key Recent Notices\nSemester Fee Notice (Jan–Jun 2026): gndec.ac.in/?q=fee_notice\nSpecial Chance Exam Form: erp.gndec.ac.in/noticeboard/examination-form-special-chance-examination\nResult Gazette Notifications: academics.gndec.ac.in/resultnotification/",
+        "If you want official GNDEC notices, they are not always on a single page. Administrative notices usually appear on the ERP noticeboard, exam-related notices on the exam portal, admission notices on the admission portal, and some branch-specific notices on department websites."
+      ],
+      "links": [
+        "https://erp.gndec.ac.in/notice",
+        "https://exam.gndec.ac.in/",
+        "https://admission.gndec.ac.in/important_notices.php",
+        "https://appsc.gndec.ac.in/notices",
+        "https://it.gndec.ac.in/",
+        "https://www.gndec.ac.in/?q=node/162",
+        "https://www.gndec.ac.in/?q=fee_notice",
+        "https://erp.gndec.ac.in/noticeboard/examination-form-special-chance-examination",
+        "https://academics.gndec.ac.in/resultnotification/"
+      ]
+    },
+    {
+      "tag": "holiday_list",
+      "patterns": [
+        "holiday list",
+        "college holidays",
+        "gazetted holidays",
+        "holiday calendar",
+        "gndec holiday list",
+        "academic calendar 2026"
+      ],
+      "responses": [
+        "The official holiday list and academic calendar for the 2026 session are available through the following direct links from the GNDEC Ludhiana official website:\n\nOfficial 2026 PDF Links\nList of Holidays 2026 (Full PDF): gndec.ac.in/sites/default/files/LoH26.pdf\nIncludes all Gazetted and Restricted holidays for the entire calendar year.\nAcademic Calendar Jan–June 2026: gndec.ac.in/?q=node/23\nThis page hosts the current semester's academic schedule, including session start dates and mid-semester exams.\nSemester Fee Schedule Notice: gndec.ac.in/sites/default/files/fnjanjun26.pdf\nDetailed fee deadlines and fine structures specifically for the Jan–June 2026 period.",
+        "If you want GNDEC holidays or academic calendar details, the holiday list, semester academic schedule, and fee deadline notice are usually available separately. Holiday PDFs include gazetted and restricted holidays, while the academic calendar page shows session planning and exam-related dates."
+      ],
+      "links": [
+        "https://www.gndec.ac.in/sites/default/files/LoH26.pdf",
+        "https://www.gndec.ac.in/?q=node/23",
+        "https://www.gndec.ac.in/sites/default/files/fnjanjun26.pdf"
+      ]
+    },
+    {
+      "tag": "unknown",
+      "patterns": [
+        "random query",
+        "i need something else",
+        "you are not understanding",
+        "not this"
+      ],
+      "responses": [
+        "Sorry, I could not understand your question clearly. Please ask in simple words about topics like GNDEC fees, admission process, eligibility, hostel, courses offered, B.Tech branches, library, notices, holiday list, exam portal, or location.",
+        "I’m sorry, but I’m not fully sure about your request yet. Please try asking in a more specific way, such as 'gndec fees', 'girls hostel', 'btech courses', 'admission eligibility', or 'library timing'."
+      ],
+      "links": []
+   }
+    ]
+}

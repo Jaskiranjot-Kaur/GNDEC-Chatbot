@@ -1,0 +1,63 @@
+<svg width="1700" height="820" viewBox="0 0 1700 820" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1700" y2="820" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#081220"/>
+      <stop offset="1" stop-color="#111D38"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#1F2B4F"/>
+      <stop offset="1" stop-color="#162240"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#020617" flood-opacity="0.42"/>
+    </filter>
+    <style>
+      .title { font: 700 42px 'Segoe UI', Arial, sans-serif; fill: #F8FAFC; }
+      .subtitle { font: 500 20px 'Segoe UI', Arial, sans-serif; fill: #C6D2F3; }
+      .head { font: 700 24px 'Segoe UI', Arial, sans-serif; fill: #F8FAFC; }
+      .body { font: 600 18px 'Segoe UI', Arial, sans-serif; fill: #E0E8FF; }
+    </style>
+  </defs>
+
+  <rect width="1700" height="820" fill="url(#bg)"/>
+  <circle cx="1480" cy="120" r="180" fill="#213A7B" opacity="0.14"/>
+  <circle cx="180" cy="700" r="190" fill="#1C3270" opacity="0.13"/>
+
+  <text x="86" y="88" class="title">UML Class Diagram</text>
+  <text x="86" y="124" class="subtitle">Short and easy version</text>
+
+  <rect x="150" y="260" width="260" height="180" fill="url(#panel)" stroke="#4B5F9B" filter="url(#shadow)"/>
+  <line x1="150" y1="320" x2="410" y2="320" stroke="#5B70AF" stroke-width="2"/>
+  <text x="208" y="300" class="head">AppController</text>
+  <text x="182" y="360" class="body">+ routes</text>
+  <text x="182" y="392" class="body">+ handlers</text>
+
+  <rect x="500" y="260" width="260" height="180" fill="url(#panel)" stroke="#4B5F9B" filter="url(#shadow)"/>
+  <line x1="500" y1="320" x2="760" y2="320" stroke="#5B70AF" stroke-width="2"/>
+  <text x="592" y="300" class="head">Parser</text>
+  <text x="532" y="360" class="body">+ intent</text>
+  <text x="532" y="392" class="body">+ entities</text>
+
+  <rect x="850" y="260" width="260" height="180" fill="url(#panel)" stroke="#4B5F9B" filter="url(#shadow)"/>
+  <line x1="850" y1="320" x2="1110" y2="320" stroke="#5B70AF" stroke-width="2"/>
+  <text x="927" y="300" class="head">Resolver</text>
+  <text x="882" y="360" class="body">+ official links</text>
+  <text x="882" y="392" class="body">+ context</text>
+
+  <rect x="1200" y="260" width="260" height="180" fill="url(#panel)" stroke="#4B5F9B" filter="url(#shadow)"/>
+  <line x1="1200" y1="320" x2="1460" y2="320" stroke="#5B70AF" stroke-width="2"/>
+  <text x="1240" y="300" class="head">ResponseEngine</text>
+  <text x="1232" y="360" class="body">+ reply</text>
+  <text x="1232" y="392" class="body">+ meta</text>
+
+  <rect x="610" y="540" width="320" height="180" fill="url(#panel)" stroke="#4B5F9B" filter="url(#shadow)"/>
+  <line x1="610" y1="600" x2="930" y2="600" stroke="#5B70AF" stroke-width="2"/>
+  <text x="662" y="580" class="head">RequestEngine / Config</text>
+  <text x="642" y="640" class="body">+ support request flow</text>
+  <text x="642" y="672" class="body">+ dataset and links</text>
+
+  <line x1="410" y1="350" x2="500" y2="350" stroke="#B3C8FF" stroke-width="4" stroke-linecap="round"/>
+  <line x1="760" y1="350" x2="850" y2="350" stroke="#B3C8FF" stroke-width="4" stroke-linecap="round"/>
+  <line x1="1110" y1="350" x2="1200" y2="350" stroke="#B3C8FF" stroke-width="4" stroke-linecap="round"/>
+  <line x1="980" y1="440" x2="980" y2="540" stroke="#B3C8FF" stroke-width="4" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GNDEC AI Helpdesk</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Sora:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+  <div class="shell">
+    <div class="panel">
+      <header class="topbar">
+        <div>
+          <h1>GNDEC AI Helpdesk</h1>
+          <p>Ask in English, Hindi, Punjabi, Hinglish, or Roman Punjabi about timetables, admissions, fees, hostel, results, and more.</p>
+        </div>
+
+        <div class="controls">
+          <select id="languageSelect">
+            <option value="auto">Auto</option>
+            <option value="en">English</option>
+            <option value="hi">Hindi</option>
+            <option value="pa">Punjabi</option>
+          </select>
+        </div>
+      </header>
+
+      <section class="workspace">
+        <main id="chatBox" class="chat-box">
+          <div class="row bot-row">
+            <div class="avatar">AI</div>
+            <div class="content-wrap">
+              <div class="bubble bot">
+                Hello! I am your GNDEC chatbot. How can I help you?
+              </div>
+            </div>
+          </div>
+        </main>
+
+        <aside class="request-sidebar">
+          <button id="requestToggle" class="request-toggle" type="button" aria-expanded="false">
+            Open Request Section
+          </button>
+
+          <div id="requestCard" class="request-card request-card-collapsed">
+            <div class="request-card-head">
+              <div>
+                <h2>Digital Request Section</h2>
+                <p>Send admin-facing document requests here without adding anything to the main chat.</p>
+              </div>
+              <button id="requestClose" class="request-close" type="button" aria-label="Close request section">x</button>
+            </div>
+
+            <div class="request-list">
+              <button type="button" onclick="sendRequestQuick('Document Approval Request')">
+                Request Document Approval
+              </button>
+              <button type="button" onclick="sendRequestQuick('Approval Status Follow-up')">
+                Check Approval Status
+              </button>
+              <button type="button" onclick="sendRequestQuick('Administrator Contact')">
+                Contact Administrator
+              </button>
+              <button type="button" onclick="sendRequestQuick('Bonafide Support')">
+                Bonafide Support
+              </button>
+            </div>
+
+            <form id="requestForm" class="request-form">
+              <label for="requestStudentName">Student Name</label>
+              <input
+                id="requestStudentName"
+                type="text"
+                placeholder="Enter your full name"
+              />
+
+              <label for="requestRollNo">Roll Number</label>
+              <input
+                id="requestRollNo"
+                type="text"
+                placeholder="Enter your roll number"
+              />
+
+              <label for="requestType">Document Type</label>
+              <select id="requestType">
+                <option value="Bonafide Certificate">Bonafide Certificate</option>
+                <option value="Character Certificate">Character Certificate</option>
+                <option value="Transcript Approval">Transcript Approval</option>
+                <option value="NOC Approval">NOC Approval</option>
+                <option value="Branch Change Request">Branch Change Request</option>
+                <option value="Other Document Approval">Other Document Approval</option>
+              </select>
+
+              <label for="requestPriority">Priority</label>
+              <select id="requestPriority">
+                <option value="Normal">Normal</option>
+                <option value="Urgent">Urgent</option>
+                <option value="Same Day">Same Day</option>
+              </select>
+
+              <label for="requestReason">Reason</label>
+              <textarea
+                id="requestReason"
+                rows="3"
+                placeholder="Write a short reason for the approval request..."
+              ></textarea>
+
+              <button type="submit" class="request-submit">Send Request</button>
+            </form>
+
+            <div id="requestOutput" class="request-output">
+              <div class="request-response">
+                <h3>Request Assistant</h3>
+                <p>
+                  Use this side panel to send approval-related requests without adding
+                  them to the main chatbot conversation.
+                </p>
+              </div>
+            </div>
+
+            <div class="request-history-wrap">
+              <div class="request-history-head">
+                <h3>Recent Requests</h3>
+                <span class="request-history-note">Saved locally</span>
+              </div>
+              <div id="requestHistory" class="request-history">
+                <div class="request-history-empty">
+                  Your request cards will appear here after submission.
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <footer class="inputbar">
+        <input
+          id="userInput"
+          type="text"
+          placeholder="Ask for a timetable, admission info, fees, hostel, results..."
+          autocomplete="off"
+        />
+        <button id="sendBtn">Send</button>
+      </footer>
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

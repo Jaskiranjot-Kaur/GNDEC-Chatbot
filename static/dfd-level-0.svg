@@ -1,0 +1,67 @@
+<svg width="1700" height="900" viewBox="0 0 1700 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1700" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#081220"/>
+      <stop offset="1" stop-color="#111D38"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#1F2B4F"/>
+      <stop offset="1" stop-color="#162240"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#70A8FF"/>
+      <stop offset="1" stop-color="#7C6FFF"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#020617" flood-opacity="0.42"/>
+    </filter>
+    <marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+      <path d="M1 1L7 4.5L1 8" stroke="#B3C8FF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    </marker>
+    <style>
+      .title { font: 700 42px 'Segoe UI', Arial, sans-serif; fill: #F8FAFC; }
+      .subtitle { font: 500 20px 'Segoe UI', Arial, sans-serif; fill: #C6D2F3; }
+      .label { font: 700 24px 'Segoe UI', Arial, sans-serif; fill: #F8FAFC; }
+      .body { font: 600 18px 'Segoe UI', Arial, sans-serif; fill: #E0E8FF; }
+      .small { font: 700 22px 'Segoe UI', Arial, sans-serif; fill: #F8FAFC; }
+    </style>
+  </defs>
+
+  <rect width="1700" height="900" fill="url(#bg)"/>
+  <circle cx="1490" cy="120" r="170" fill="#213A7B" opacity="0.14"/>
+  <circle cx="180" cy="760" r="190" fill="#1C3270" opacity="0.13"/>
+
+  <text x="86" y="88" class="title">DFD Level 0</text>
+  <text x="86" y="124" class="subtitle">Context level data flow diagram</text>
+
+  <rect x="120" y="280" width="250" height="140" rx="24" fill="url(#panel)" stroke="#465994" filter="url(#shadow)"/>
+  <text x="188" y="345" class="label">Student</text>
+
+  <ellipse cx="850" cy="350" rx="250" ry="110" fill="url(#panel)" stroke="#465994" filter="url(#shadow)"/>
+  <text x="745" y="335" class="label">GNDEC Chatbot</text>
+  <text x="742" y="372" class="body">Main System Process</text>
+
+  <rect x="1330" y="280" width="250" height="140" rx="24" fill="url(#panel)" stroke="#465994" filter="url(#shadow)"/>
+  <text x="1415" y="345" class="label">Admin</text>
+
+  <rect x="650" y="620" width="400" height="120" rx="24" fill="url(#panel)" stroke="#465994" filter="url(#shadow)"/>
+  <text x="715" y="680" class="label">GNDEC Official Sources</text>
+
+  <line x1="370" y1="330" x2="590" y2="330" stroke="#B3C8FF" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <text x="398" y="308" class="small">queries</text>
+
+  <line x1="600" y1="385" x2="380" y2="385" stroke="#B3C8FF" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <text x="404" y="422" class="small">answers / links</text>
+
+  <line x1="1100" y1="330" x2="1330" y2="330" stroke="#B3C8FF" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <text x="1116" y="308" class="small">requests / status</text>
+
+  <line x1="1330" y1="385" x2="1100" y2="385" stroke="#B3C8FF" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <text x="1150" y="422" class="small">updates</text>
+
+  <line x1="850" y1="460" x2="850" y2="620" stroke="#B3C8FF" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <text x="888" y="544" class="small">retrieve context</text>
+
+  <line x1="910" y1="620" x2="910" y2="470" stroke="#B3C8FF" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <text x="940" y="554" class="small">official data</text>
+</svg>

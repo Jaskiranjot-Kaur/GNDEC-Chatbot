@@ -1,0 +1,81 @@
+<svg width="1700" height="860" viewBox="0 0 1700 860" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1700" y2="860" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#081220"/>
+      <stop offset="1" stop-color="#111D38"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#1F2B4F"/>
+      <stop offset="1" stop-color="#162240"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#70A8FF"/>
+      <stop offset="1" stop-color="#7C6FFF"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#020617" flood-opacity="0.42"/>
+    </filter>
+    <style>
+      .title { font: 700 42px 'Segoe UI', Arial, sans-serif; fill: #F8FAFC; }
+      .subtitle { font: 500 20px 'Segoe UI', Arial, sans-serif; fill: #C6D2F3; }
+      .label { font: 700 24px 'Segoe UI', Arial, sans-serif; fill: #F8FAFC; }
+      .body { font: 600 19px 'Segoe UI', Arial, sans-serif; fill: #E0E8FF; }
+      .small { font: 700 15px 'Segoe UI', Arial, sans-serif; fill: #F8FAFC; }
+    </style>
+  </defs>
+
+  <rect width="1700" height="860" fill="url(#bg)"/>
+  <circle cx="1480" cy="120" r="180" fill="#213A7B" opacity="0.14"/>
+  <circle cx="180" cy="720" r="190" fill="#1C3270" opacity="0.13"/>
+
+  <text x="86" y="88" class="title">Use Case Diagram</text>
+  <text x="86" y="124" class="subtitle">Short and clear report version</text>
+
+  <rect x="340" y="160" width="1020" height="620" rx="30" fill="rgba(19,29,57,0.82)" stroke="#40528F"/>
+  <rect x="384" y="186" width="150" height="36" rx="18" fill="url(#accent)"/>
+  <text x="418" y="210" class="small">GNDEC Chatbot</text>
+
+  <g filter="url(#shadow)">
+    <circle cx="160" cy="320" r="28" stroke="#C6D2F3" stroke-width="4"/>
+    <line x1="160" y1="348" x2="160" y2="425" stroke="#C6D2F3" stroke-width="4" stroke-linecap="round"/>
+    <line x1="122" y1="375" x2="198" y2="375" stroke="#C6D2F3" stroke-width="4" stroke-linecap="round"/>
+    <line x1="160" y1="425" x2="130" y2="480" stroke="#C6D2F3" stroke-width="4" stroke-linecap="round"/>
+    <line x1="160" y1="425" x2="190" y2="480" stroke="#C6D2F3" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <text x="108" y="530" class="label">Student</text>
+
+  <g filter="url(#shadow)">
+    <circle cx="1540" cy="320" r="28" stroke="#C6D2F3" stroke-width="4"/>
+    <line x1="1540" y1="348" x2="1540" y2="425" stroke="#C6D2F3" stroke-width="4" stroke-linecap="round"/>
+    <line x1="1502" y1="375" x2="1578" y2="375" stroke="#C6D2F3" stroke-width="4" stroke-linecap="round"/>
+    <line x1="1540" y1="425" x2="1510" y2="480" stroke="#C6D2F3" stroke-width="4" stroke-linecap="round"/>
+    <line x1="1540" y1="425" x2="1570" y2="480" stroke="#C6D2F3" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <text x="1504" y="530" class="label">Admin</text>
+
+  <g filter="url(#shadow)">
+    <ellipse cx="660" cy="270" rx="170" ry="54" fill="url(#panel)" stroke="#4B5F9B"/>
+    <text x="583" y="278" class="body">Ask Query</text>
+
+    <ellipse cx="1030" cy="270" rx="190" ry="54" fill="url(#panel)" stroke="#4B5F9B"/>
+    <text x="922" y="278" class="body">Open Official Link</text>
+
+    <ellipse cx="660" cy="470" rx="180" ry="54" fill="url(#panel)" stroke="#4B5F9B"/>
+    <text x="555" y="478" class="body">Check Timetable</text>
+
+    <ellipse cx="1030" cy="470" rx="205" ry="54" fill="url(#panel)" stroke="#4B5F9B"/>
+    <text x="905" y="478" class="body">Request Support</text>
+
+    <ellipse cx="845" cy="660" rx="230" ry="54" fill="url(#panel)" stroke="#4B5F9B"/>
+    <text x="701" y="668" class="body">Manage / Track Request Status</text>
+  </g>
+
+  <line x1="188" y1="330" x2="490" y2="270" stroke="#B3C8FF" stroke-width="4" stroke-linecap="round"/>
+  <line x1="188" y1="372" x2="840" y2="270" stroke="#B3C8FF" stroke-width="4" stroke-linecap="round"/>
+  <line x1="198" y1="405" x2="480" y2="470" stroke="#B3C8FF" stroke-width="4" stroke-linecap="round"/>
+  <line x1="188" y1="448" x2="620" y2="660" stroke="#B3C8FF" stroke-width="4" stroke-linecap="round"/>
+
+  <line x1="1512" y1="330" x2="1220" y2="270" stroke="#B3C8FF" stroke-width="4" stroke-linecap="round"/>
+  <line x1="1512" y1="390" x2="1235" y2="470" stroke="#B3C8FF" stroke-width="4" stroke-linecap="round"/>
+  <line x1="1512" y1="448" x2="1070" y2="660" stroke="#B3C8FF" stroke-width="4" stroke-linecap="round"/>
+</svg>

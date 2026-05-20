@@ -1,0 +1,125 @@
+<svg width="1700" height="1080" viewBox="0 0 1700 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1700" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#081220"/>
+      <stop offset="1" stop-color="#111D38"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#1F2B4F"/>
+      <stop offset="1" stop-color="#162240"/>
+    </linearGradient>
+    <linearGradient id="accent1" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#70A8FF"/>
+      <stop offset="1" stop-color="#7C6FFF"/>
+    </linearGradient>
+    <linearGradient id="accent2" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#49D0C5"/>
+      <stop offset="1" stop-color="#269C9C"/>
+    </linearGradient>
+    <linearGradient id="accent3" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#F6C453"/>
+      <stop offset="1" stop-color="#F38B49"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#020617" flood-opacity="0.45"/>
+    </filter>
+    <marker id="arrow" markerWidth="14" markerHeight="14" refX="11" refY="7" orient="auto">
+      <path d="M1 1L11 7L1 13" stroke="#B3C8FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <style>
+      .title { font: 700 42px 'Segoe UI', Arial, sans-serif; fill: #F8FAFC; }
+      .subtitle { font: 500 20px 'Segoe UI', Arial, sans-serif; fill: #C6D2F3; }
+      .section { font: 700 22px 'Segoe UI', Arial, sans-serif; fill: #F8FAFC; }
+      .label { font: 700 20px 'Segoe UI', Arial, sans-serif; fill: #F8FAFC; }
+      .body { font: 600 17px 'Segoe UI', Arial, sans-serif; fill: #E0E8FF; }
+      .chip { font: 700 15px 'Segoe UI', Arial, sans-serif; fill: #F8FAFC; }
+      .small { font: 600 14px 'Segoe UI', Arial, sans-serif; fill: #C5D5FF; }
+    </style>
+  </defs>
+
+  <rect width="1700" height="1080" fill="url(#bg)"/>
+  <circle cx="1480" cy="120" r="180" fill="#213A7B" opacity="0.16"/>
+  <circle cx="180" cy="900" r="220" fill="#1C3270" opacity="0.15"/>
+
+  <text x="86" y="88" class="title">GNDEC Chatbot Functional Flow Diagram</text>
+  <text x="86" y="124" class="subtitle">End-to-end user query flow and admin support flow</text>
+
+  <rect x="90" y="184" width="280" height="132" rx="24" fill="url(#panel)" stroke="#465994" filter="url(#shadow)"/>
+  <rect x="116" y="208" width="92" height="34" rx="17" fill="url(#accent1)"/>
+  <text x="142" y="231" class="chip">Start</text>
+  <text x="118" y="270" class="label">User Opens Chatbot</text>
+  <text x="118" y="298" class="body">Website / local Flask app</text>
+
+  <rect x="470" y="184" width="320" height="132" rx="24" fill="url(#panel)" stroke="#465994" filter="url(#shadow)"/>
+  <rect x="496" y="208" width="108" height="34" rx="17" fill="url(#accent2)"/>
+  <text x="524" y="231" class="chip">Input</text>
+  <text x="498" y="270" class="label">User Enters Query</text>
+  <text x="498" y="298" class="body">Timetable / hostel / fees / admin help</text>
+
+  <rect x="890" y="184" width="320" height="132" rx="24" fill="url(#panel)" stroke="#465994" filter="url(#shadow)"/>
+  <rect x="916" y="208" width="118" height="34" rx="17" fill="url(#accent3)"/>
+  <text x="945" y="231" class="chip">Parser</text>
+  <text x="918" y="270" class="label">Query Processing</text>
+  <text x="918" y="298" class="body">Intent, language, department, group</text>
+
+  <rect x="1310" y="184" width="300" height="132" rx="24" fill="url(#panel)" stroke="#465994" filter="url(#shadow)"/>
+  <rect x="1336" y="208" width="100" height="34" rx="17" fill="url(#accent1)"/>
+  <text x="1363" y="231" class="chip">Route</text>
+  <text x="1338" y="270" class="label">Flow Decision</text>
+  <text x="1338" y="298" class="body">General query or admin request</text>
+
+  <rect x="220" y="420" width="420" height="148" rx="24" fill="url(#panel)" stroke="#465994" filter="url(#shadow)"/>
+  <text x="248" y="466" class="section">Normal Query Flow</text>
+  <text x="248" y="506" class="label">Resolver Selects Official Source</text>
+  <text x="248" y="536" class="body">Website, PDF, timetable HTML, department page</text>
+
+  <rect x="760" y="420" width="420" height="148" rx="24" fill="url(#panel)" stroke="#465994" filter="url(#shadow)"/>
+  <text x="788" y="466" class="section">Context Preparation</text>
+  <text x="788" y="506" class="label">Scrape / Clean / Extract</text>
+  <text x="788" y="536" class="body">Exact chunk, timetable anchor, PDF text, metadata</text>
+
+  <rect x="1300" y="420" width="250" height="148" rx="24" fill="url(#panel)" stroke="#465994" filter="url(#shadow)"/>
+  <text x="1328" y="466" class="section">AI Response</text>
+  <text x="1328" y="506" class="label">Gemini or Local Fallback</text>
+  <text x="1328" y="536" class="body">Reply + official link</text>
+
+  <rect x="220" y="684" width="420" height="148" rx="24" fill="url(#panel)" stroke="#465994" filter="url(#shadow)"/>
+  <text x="248" y="730" class="section">Chat Output</text>
+  <text x="248" y="770" class="label">User Sees Answer</text>
+  <text x="248" y="800" class="body">Text response + Open PDF / Open Official Resource</text>
+
+  <rect x="920" y="684" width="420" height="148" rx="24" fill="url(#panel)" stroke="#465994" filter="url(#shadow)"/>
+  <text x="948" y="730" class="section">Admin Support Flow</text>
+  <text x="948" y="770" class="label">Request Submission</text>
+  <text x="948" y="800" class="body">Student sends support request to admin workflow</text>
+
+  <rect x="920" y="906" width="420" height="122" rx="24" fill="url(#panel)" stroke="#465994" filter="url(#shadow)"/>
+  <text x="948" y="950" class="section">Admin Panel</text>
+  <text x="948" y="984" class="label">Review, update, track status</text>
+
+  <rect x="220" y="906" width="420" height="122" rx="24" fill="url(#panel)" stroke="#465994" filter="url(#shadow)"/>
+  <text x="248" y="950" class="section">Final Result</text>
+  <text x="248" y="984" class="label">Student gets information or request status</text>
+
+  <line x1="370" y1="250" x2="470" y2="250" stroke="#B3C8FF" stroke-width="5" marker-end="url(#arrow)"/>
+  <line x1="790" y1="250" x2="890" y2="250" stroke="#B3C8FF" stroke-width="5" marker-end="url(#arrow)"/>
+  <line x1="1210" y1="250" x2="1310" y2="250" stroke="#B3C8FF" stroke-width="5" marker-end="url(#arrow)"/>
+
+  <line x1="1460" y1="316" x2="1460" y2="420" stroke="#B3C8FF" stroke-width="5" marker-end="url(#arrow)"/>
+  <line x1="1370" y1="316" x2="1130" y2="420" stroke="#B3C8FF" stroke-width="5" marker-end="url(#arrow)"/>
+
+  <line x1="640" y1="494" x2="760" y2="494" stroke="#B3C8FF" stroke-width="5" marker-end="url(#arrow)"/>
+  <line x1="1180" y1="494" x2="1300" y2="494" stroke="#B3C8FF" stroke-width="5" marker-end="url(#arrow)"/>
+  <line x1="430" y1="568" x2="430" y2="684" stroke="#B3C8FF" stroke-width="5" marker-end="url(#arrow)"/>
+
+  <line x1="1130" y1="568" x2="1130" y2="684" stroke="#B3C8FF" stroke-width="5" marker-end="url(#arrow)"/>
+  <line x1="1130" y1="832" x2="1130" y2="906" stroke="#B3C8FF" stroke-width="5" marker-end="url(#arrow)"/>
+
+  <line x1="920" y1="967" x2="640" y2="967" stroke="#B3C8FF" stroke-width="5" marker-end="url(#arrow)"/>
+
+  <rect x="1420" y="676" width="160" height="42" rx="21" fill="url(#accent3)"/>
+  <text x="1451" y="702" class="chip">General reply path</text>
+
+  <rect x="1360" y="888" width="220" height="42" rx="21" fill="url(#accent2)"/>
+  <text x="1392" y="914" class="chip">Admin request management</text>
+</svg>

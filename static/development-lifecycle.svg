@@ -1,0 +1,84 @@
+<svg width="1700" height="820" viewBox="0 0 1700 820" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1700" y2="820" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#081220"/>
+      <stop offset="1" stop-color="#111D38"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#1F2B4F"/>
+      <stop offset="1" stop-color="#162240"/>
+    </linearGradient>
+    <linearGradient id="accent1" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#70A8FF"/>
+      <stop offset="1" stop-color="#7C6FFF"/>
+    </linearGradient>
+    <linearGradient id="accent2" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#49D0C5"/>
+      <stop offset="1" stop-color="#269C9C"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#020617" flood-opacity="0.42"/>
+    </filter>
+    <marker id="arrow" markerWidth="14" markerHeight="14" refX="11" refY="7" orient="auto">
+      <path d="M1 1L11 7L1 13" stroke="#B3C8FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <style>
+      .title { font: 700 42px 'Segoe UI', Arial, sans-serif; fill: #F8FAFC; }
+      .subtitle { font: 500 20px 'Segoe UI', Arial, sans-serif; fill: #C6D2F3; }
+      .label { font: 700 22px 'Segoe UI', Arial, sans-serif; fill: #F8FAFC; }
+      .body { font: 600 17px 'Segoe UI', Arial, sans-serif; fill: #E0E8FF; }
+      .chip { font: 700 15px 'Segoe UI', Arial, sans-serif; fill: #F8FAFC; }
+    </style>
+  </defs>
+
+  <rect width="1700" height="820" fill="url(#bg)"/>
+  <circle cx="1500" cy="100" r="170" fill="#213A7B" opacity="0.14"/>
+  <circle cx="180" cy="700" r="190" fill="#1C3270" opacity="0.13"/>
+
+  <text x="86" y="88" class="title">Development Lifecycle</text>
+  <text x="86" y="124" class="subtitle">Short and clear report version</text>
+
+  <rect x="76" y="182" width="1548" height="482" rx="30" fill="rgba(19,29,57,0.82)" stroke="#40528F"/>
+
+  <rect x="110" y="316" width="210" height="126" rx="24" fill="url(#panel)" stroke="#465994" filter="url(#shadow)"/>
+  <rect x="136" y="338" width="92" height="34" rx="17" fill="url(#accent1)"/>
+  <text x="163" y="361" class="chip">Step 1</text>
+  <text x="138" y="400" class="label">Planning</text>
+  <text x="138" y="430" class="body">Requirements</text>
+
+  <rect x="372" y="316" width="210" height="126" rx="24" fill="url(#panel)" stroke="#465994" filter="url(#shadow)"/>
+  <rect x="398" y="338" width="92" height="34" rx="17" fill="url(#accent2)"/>
+  <text x="425" y="361" class="chip">Step 2</text>
+  <text x="400" y="400" class="label">Design</text>
+  <text x="400" y="430" class="body">Architecture</text>
+
+  <rect x="634" y="316" width="210" height="126" rx="24" fill="url(#panel)" stroke="#465994" filter="url(#shadow)"/>
+  <rect x="660" y="338" width="92" height="34" rx="17" fill="url(#accent1)"/>
+  <text x="687" y="361" class="chip">Step 3</text>
+  <text x="662" y="400" class="label">Development</text>
+  <text x="662" y="430" class="body">Backend + UI + RAG</text>
+
+  <rect x="896" y="316" width="210" height="126" rx="24" fill="url(#panel)" stroke="#465994" filter="url(#shadow)"/>
+  <rect x="922" y="338" width="92" height="34" rx="17" fill="url(#accent2)"/>
+  <text x="949" y="361" class="chip">Step 4</text>
+  <text x="924" y="400" class="label">Integration</text>
+  <text x="924" y="430" class="body">APIs + Admin Flow</text>
+
+  <rect x="1158" y="316" width="210" height="126" rx="24" fill="url(#panel)" stroke="#465994" filter="url(#shadow)"/>
+  <rect x="1184" y="338" width="92" height="34" rx="17" fill="url(#accent1)"/>
+  <text x="1211" y="361" class="chip">Step 5</text>
+  <text x="1186" y="400" class="label">Testing</text>
+  <text x="1186" y="430" class="body">System + UAT</text>
+
+  <rect x="1420" y="316" width="170" height="126" rx="24" fill="url(#panel)" stroke="#465994" filter="url(#shadow)"/>
+  <rect x="1446" y="338" width="92" height="34" rx="17" fill="url(#accent2)"/>
+  <text x="1473" y="361" class="chip">Step 6</text>
+  <text x="1448" y="400" class="label">Ready</text>
+  <text x="1448" y="430" class="body">Deployment</text>
+
+  <line x1="320" y1="380" x2="372" y2="380" stroke="#B3C8FF" stroke-width="5" marker-end="url(#arrow)"/>
+  <line x1="582" y1="380" x2="634" y2="380" stroke="#B3C8FF" stroke-width="5" marker-end="url(#arrow)"/>
+  <line x1="844" y1="380" x2="896" y2="380" stroke="#B3C8FF" stroke-width="5" marker-end="url(#arrow)"/>
+  <line x1="1106" y1="380" x2="1158" y2="380" stroke="#B3C8FF" stroke-width="5" marker-end="url(#arrow)"/>
+  <line x1="1368" y1="380" x2="1420" y2="380" stroke="#B3C8FF" stroke-width="5" marker-end="url(#arrow)"/>
+</svg>

@@ -1,0 +1,727 @@
+{
+  "metadata": {
+    "project": "GNDEC Chatbot",
+    "version": "1.0",
+    "description": "Seed intent dataset for GNDEC helpdesk training and retrieval design.",
+    "languages": ["en", "hi", "pa", "hinglish", "roman_punjabi"]
+  },
+  "categories": [
+    {
+      "id": "admissions",
+      "name": "Admissions and Prospective Students",
+      "priority": "high",
+      "intents": [
+        {
+          "tag": "admission_process",
+          "answer_mode": "portal_redirect",
+          "official_sources": ["https://admission.gndec.ac.in/"],
+          "patterns": [
+            "admission process",
+            "how to apply for admission",
+            "gndec admission process",
+            "admission procedure batao",
+            "admission process ki hai",
+            "how to take admission",
+            "direct admission kaise hoti hai",
+            "apply for gndec",
+            "mujhe admission process batao",
+            "admission layi apply kiven kariye"
+          ]
+        },
+        {
+          "tag": "admission_eligibility",
+          "answer_mode": "summary_plus_link",
+          "official_sources": ["https://admission.gndec.ac.in/"],
+          "patterns": [
+            "eligibility for btech cse",
+            "admission eligibility",
+            "who can apply for btech",
+            "lateral entry eligibility",
+            "btech cse eligibility kya hai",
+            "ece admission eligibility",
+            "lateral entry civil eligibility",
+            "admission layi eligibility ki hai"
+          ]
+        },
+        {
+          "tag": "admission_documents",
+          "answer_mode": "summary_plus_link",
+          "official_sources": ["https://admission.gndec.ac.in/important_notices.php", "https://admission.gndec.ac.in/"],
+          "patterns": [
+            "required documents for admission",
+            "admission documents list",
+            "what documents are needed for admission",
+            "admission layi documents kehde ne",
+            "admission form ke saath kya lagta hai",
+            "college admission document checklist",
+            "documents required for btech admission",
+            "btech admission documents",
+            "btech admission document checklist",
+            "btech ke liye kaunse documents chahiye",
+            "btech admission layi documents"
+          ]
+        },
+        {
+          "tag": "sre_exam",
+          "answer_mode": "summary_plus_link",
+          "official_sources": ["https://www.gndec.ac.in/?q=node/509", "https://admission.gndec.ac.in/"],
+          "patterns": [
+            "sre exam",
+            "sikh religion examination",
+            "sikh minority quota exam",
+            "sre registration",
+            "sre exam details",
+            "sre test pattern",
+            "sikh religion exam ki details",
+            "sre bare dasso",
+            "एसआरई एग्जाम",
+            "ਐਸਆਰਈ ਐਗਜ਼ਾਮ"
+          ]
+        },
+        {
+          "tag": "admission_contact",
+          "answer_mode": "summary_plus_link",
+          "official_sources": ["https://admission.gndec.ac.in/"],
+          "patterns": [
+            "admission cell contact",
+            "how can i contact admission cell",
+            "admission helpline number",
+            "admission office contact",
+            "admission wale ka number",
+            "admission contact dasso"
+          ]
+        },
+        {
+          "tag": "management_quota",
+          "answer_mode": "summary_plus_link",
+          "official_sources": ["https://admission.gndec.ac.in/"],
+          "patterns": [
+            "management quota details",
+            "is there management quota",
+            "management quota cse",
+            "management quota admission kaise hoti hai",
+            "management quota bare dasso"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "administration",
+      "name": "Administration and Leadership",
+      "priority": "high",
+      "intents": [
+        {
+          "tag": "principal_info",
+          "answer_mode": "exact_answer",
+          "official_sources": ["https://www.gndec.ac.in/?q=node/5"],
+          "patterns": [
+            "who is principal of this college",
+            "who is the principal of gndec",
+            "principal name",
+            "college principal",
+            "gndec principal",
+            "principal of college",
+            "principal kaun hai",
+            "principal bare daso"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "academics",
+      "name": "Academic Support",
+      "priority": "high",
+      "intents": [
+        {
+          "tag": "timetable",
+          "answer_mode": "exact_answer",
+          "official_sources": [
+            "https://cse.gndec.ac.in/sites/default/files/TT%20Jan-June%202026_groups_days_horizontal%20%282%29_0.html",
+            "https://ece.gndec.ac.in/sites/default/files/classes%20individual%20%283%29.html",
+            "https://it.gndec.ac.in/sites/default/files/jan_june2025_6%2027%20dec_years_days_horizontal%20%286%29.html"
+          ],
+          "patterns": [
+            "what is my timetable for d2 cse b",
+            "give me timetable of d2 cse b",
+            "show ug timetable link",
+            "d3 it a timetable",
+            "mujhe d2 cse b ka timetable do",
+            "ece timetable kholo",
+            "class routine for d4 cse a",
+            "time table dasso"
+          ]
+        },
+        {
+          "tag": "academic_calendar",
+          "answer_mode": "summary_plus_link",
+          "official_sources": ["https://gndec.ac.in/?q=node/23"],
+          "patterns": [
+            "academic calendar for 2026",
+            "academic calendar",
+            "when will classes start",
+            "semester timeline",
+            "class start date",
+            "academic session calendar",
+            "calendar dasso"
+          ]
+        },
+        {
+          "tag": "holiday_list",
+          "answer_mode": "pdf_redirect",
+          "official_sources": ["https://gndec.ac.in/sites/default/files/LoH26.pdf"],
+          "patterns": [
+            "holiday list",
+            "is the college closed tomorrow",
+            "list of holidays",
+            "summer vacations kab se",
+            "college holidays",
+            "holiday list dasso"
+          ]
+        },
+        {
+          "tag": "syllabus_query",
+          "answer_mode": "summary_plus_link",
+          "official_sources": ["https://academics.gndec.ac.in/"],
+          "patterns": [
+            "what is the syllabus of operating systems",
+            "give me syllabus for nlp 6th sem cse",
+            "os syllabus",
+            "semester syllabus kahan milega",
+            "subject syllabus batao",
+            "syllabus dasso"
+          ]
+        },
+        {
+          "tag": "previous_papers",
+          "answer_mode": "summary_plus_link",
+          "official_sources": ["https://gndec.refread.com/#/search"],
+          "patterns": [
+            "previous year question papers",
+            "old papers kahan milenge",
+            "where are previous year papers",
+            "question bank link",
+            "past papers daso"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "exams",
+      "name": "Examination Queries",
+      "priority": "high",
+      "intents": [
+        {
+          "tag": "exam_datesheet",
+          "answer_mode": "portal_redirect",
+          "official_sources": ["https://exam.gndec.ac.in/"],
+          "patterns": [
+            "show latest date sheet",
+            "when are final exams",
+            "when are mid sem exams",
+            "exam date sheet",
+            "mse ii kab start hogi",
+            "final exam dates",
+            "datesheet kholo"
+          ]
+        },
+        {
+          "tag": "makeup_exam_info",
+          "answer_mode": "exact_answer",
+          "official_sources": ["https://exam.gndec.ac.in/"],
+          "patterns": [
+            "makeup examinations details",
+            "makeup exam details",
+            "makeup examination form",
+            "make up exam details",
+            "re exam details",
+            "makeup examination rules"
+          ]
+        },
+        {
+          "tag": "re_evaluation",
+          "answer_mode": "portal_redirect",
+          "official_sources": ["https://exam.gndec.ac.in/"],
+          "patterns": [
+            "how to apply for re evaluation",
+            "re-evaluation kaise apply kare",
+            "reevaluation process",
+            "result recheck kaise karvaye",
+            "paper rechecking"
+          ]
+        },
+        {
+          "tag": "admit_card",
+          "answer_mode": "portal_redirect",
+          "official_sources": ["https://exam.gndec.ac.in/"],
+          "patterns": [
+            "how to download admit card",
+            "admit card link",
+            "exam admit card kahan se milega",
+            "hall ticket kaise nikale"
+          ]
+        },
+        {
+          "tag": "backlog_form",
+          "answer_mode": "portal_redirect",
+          "official_sources": ["https://exam.gndec.ac.in/"],
+          "patterns": [
+            "backlog exam form kaise fill kare",
+            "reappear form",
+            "backlog form link",
+            "supplementary form kahan milega"
+          ]
+        },
+        {
+          "tag": "internal_marks",
+          "answer_mode": "portal_redirect",
+          "official_sources": ["https://exam.gndec.ac.in/", "https://academics.gndec.ac.in/"],
+          "patterns": [
+            "internal marks kaise check kare",
+            "mst marks kahan dikhenge",
+            "sessional marks",
+            "internal assessment marks"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fees",
+      "name": "Fees and Payments",
+      "priority": "high",
+      "intents": [
+        {
+          "tag": "fee_structure",
+          "answer_mode": "pdf_redirect",
+          "official_sources": ["https://admission.gndec.ac.in/Fee_Structure.php", "https://gndec.ac.in/sites/default/files/fnjd25.pdf", "https://admission.gndec.ac.in/"],
+          "patterns": [
+            "what is the fee structure for btech",
+            "semester fee kitni hai",
+            "fee structure for 1st year cse",
+            "college fees",
+            "gndec fee structure",
+            "hostel fee kitni hai",
+            "fee structure",
+            "btech fee structure",
+            "admission fee details",
+            "एमटेक या बीटेक फीस",
+            "ਫੀ ਸਟ੍ਰਕਚਰ"
+          ]
+        },
+        {
+          "tag": "fee_deadline",
+          "answer_mode": "summary_plus_link",
+          "official_sources": ["https://gndec.ac.in/sites/default/files/fnjd25.pdf"],
+          "patterns": [
+            "last date to pay fees",
+            "fee submission deadline",
+            "fee due date",
+            "kab tak fees bharni hai"
+          ]
+        },
+        {
+          "tag": "late_fee",
+          "answer_mode": "summary_plus_link",
+          "official_sources": ["https://gndec.ac.in/sites/default/files/fnjd25.pdf"],
+          "patterns": [
+            "late fee charges kya hai",
+            "late charges for fee",
+            "fees late bharne par kitna lagega"
+          ]
+        },
+        {
+          "tag": "online_fee_payment",
+          "answer_mode": "portal_redirect",
+          "official_sources": ["https://academics.gndec.ac.in/"],
+          "patterns": [
+            "online fee payment link",
+            "fee online kaise bharni hai",
+            "payment link for fees",
+            "fee receipt kaise download kare"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "departments",
+      "name": "Department Queries",
+      "priority": "high",
+      "intents": [
+        {
+          "tag": "hod_info",
+          "answer_mode": "exact_answer",
+          "official_sources": ["https://cse.gndec.ac.in/", "https://ece.gndec.ac.in/?q=node/1"],
+          "patterns": [
+            "who is the hod of cse",
+            "who is cse hod",
+            "head of department of cse",
+            "hod of ece department",
+            "cse department ka hod kon hai",
+            "ece da hod kaun hai"
+          ]
+        },
+        {
+          "tag": "faculty_list",
+          "answer_mode": "exact_answer",
+          "official_sources": [
+            "https://cse.gndec.ac.in/?q=node/3",
+            "https://ece.gndec.ac.in/sites/default/files/FACULTY%20DETAILS-%20%281%29.pdf"
+          ],
+          "patterns": [
+            "faculty list of it department",
+            "ece faculty batao",
+            "show faculty list of cse",
+            "department faculty details",
+            "faculty members in ece"
+          ]
+        },
+        {
+          "tag": "department_website",
+          "answer_mode": "portal_redirect",
+          "official_sources": [
+            "https://cse.gndec.ac.in/",
+            "https://ece.gndec.ac.in/",
+            "https://it.gndec.ac.in/"
+          ],
+          "patterns": [
+            "cse department website",
+            "it department website",
+            "ece website",
+            "department page kholo",
+            "cse page link"
+          ]
+        },
+        {
+          "tag": "lab_facilities",
+          "answer_mode": "summary_plus_link",
+          "official_sources": [
+            "https://cse.gndec.ac.in/",
+            "https://ece.gndec.ac.in/"
+          ],
+          "patterns": [
+            "lab facilities available",
+            "which labs are available in cse",
+            "department laboratories",
+            "lab infrastructure",
+            "labs bare dasso"
+          ]
+        },
+        {
+          "tag": "placement_stats_department",
+          "answer_mode": "summary_plus_link",
+          "official_sources": [
+            "https://www.tnpgndec.com/",
+            "https://cse.gndec.ac.in/",
+            "https://ece.gndec.ac.in/"
+          ],
+          "patterns": [
+            "placement stats of department",
+            "cse placement stats",
+            "department placements",
+            "ece placements",
+            "placement record department wise"
+          ]
+        },
+        {
+          "tag": "btech_courses",
+          "answer_mode": "portal_redirect",
+          "official_sources": ["https://academics.gndec.ac.in/programs/", "https://admission.gndec.ac.in/"],
+          "patterns": [
+            "what are the btech branches available",
+            "btech courses",
+            "which btech branches are available",
+            "engineering branches",
+            "do you have mtech in cse",
+            "available programs",
+            "courses offered in gndec"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hostel",
+      "name": "Hostel and Campus Living",
+      "priority": "high",
+      "intents": [
+        {
+          "tag": "hostel_warden",
+          "answer_mode": "exact_answer",
+          "official_sources": ["https://gndec.ac.in/sites/default/files/Helpline%20Hostel%20Querries.pdf"],
+          "patterns": [
+            "who is the chief warden",
+            "hostel warden contact",
+            "hostel 4 warden contact",
+            "hostel 1 details",
+            "hostel 2 details",
+            "hostel 3 details",
+            "boys hostel 1",
+            "boys hostel 2",
+            "boys hostel 3",
+            "boys hostel details",
+            "boys hostels details",
+            "boys hostel jitne hai",
+            "sab boys hostel",
+            "all boys hostel details",
+            "boys hostel warden",
+            "boys hostel wardens",
+            "boys hostels ke warden",
+            "boys hostels ke bare mei batao",
+            "boys hostels ke bare me batao",
+            "girls hostel details",
+            "girls hostel warden",
+            "girls hostel ke wardens",
+            "girls hostels ke bare mei batao",
+            "girls hostels ke bare me batao",
+            "girls hostel ke bare mei bhi batao",
+            "girls hostel ke bare me bhi batao",
+            "girls hostel ke bare mei batao",
+            "girls hostel ke bare me batao",
+            "girls hostel bare daso",
+            "boys hostel ke bare mei batao",
+            "boys hostel ke bare me batao",
+            "boys hostel ke bare mei bhi batao",
+            "boys hostel ke bare me bhi batao",
+            "boys hostel bare daso",
+            "girls hsotel details",
+            "hostel helpline number",
+            "warden ka number"
+          ]
+        },
+        {
+          "tag": "hostel_rules",
+          "answer_mode": "pdf_redirect",
+          "official_sources": ["https://gndec.ac.in/sites/default/files/Hostel%20Rules_24.pdf"],
+          "patterns": [
+            "rules of hostel",
+            "hostel rules kya hai",
+            "hostel rule book",
+            "hostel regulations",
+            "hostel rules dasso"
+          ]
+        },
+        {
+          "tag": "hostel_fee",
+          "answer_mode": "summary_plus_link",
+          "official_sources": ["https://admission.gndec.ac.in/", "https://gndec.ac.in/sites/default/files/fnjd25.pdf"],
+          "patterns": [
+            "hostel fees kitni hai",
+            "mess charges kya hai",
+            "mess details",
+            "mess fee",
+            "mess fees",
+            "mess charges",
+            "mess ke bare mei batao",
+            "mess ke bare me batao",
+            "mess facility",
+            "mess food",
+            "food quality in mess",
+            "mess bare daso",
+            "hostel mess details",
+            "hostel mess fee",
+            "mess ka bhi batao",
+            "hostel and mess fee",
+            "hostel charges per semester"
+          ]
+        },
+        {
+          "tag": "hostel_apply",
+          "answer_mode": "summary_plus_link",
+          "official_sources": ["https://admission.gndec.ac.in/"],
+          "patterns": [
+            "how to apply for hostel",
+            "hostel apply process",
+            "hostel room kaise milega",
+            "hostel allotment process"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "campus_life",
+      "name": "Campus Life and Facilities",
+      "priority": "medium",
+      "intents": [
+        {
+          "tag": "cafeteria_info",
+          "answer_mode": "summary_plus_link",
+          "official_sources": ["https://gndec.ac.in/?q=node/58", "https://www.gndec.ac.in/"],
+          "patterns": [
+            "college cafeteria",
+            "canteen details",
+            "campus canteen",
+            "lipton in college",
+            "happiness station",
+            "cafeteria ke bare mei batao",
+            "college canteen bare daso",
+            "कैंटीन के बारे में बताओ",
+            "ਕੈਂਟੀਨ ਬਾਰੇ ਦੱਸੋ"
+          ]
+        },
+        {
+          "tag": "sports_department",
+          "answer_mode": "summary_plus_link",
+          "official_sources": ["https://sports.gndec.ac.in/?q=node/9", "https://sports.gndec.ac.in/"],
+          "patterns": [
+            "sports department",
+            "sports complex details",
+            "gym and swimming pool",
+            "sports facilities in gndec",
+            "college sports",
+            "sports department ke bare mei batao",
+            "खेेल विभाग की जानकारी",
+            "ਖੇਡ ਵਿਭਾਗ ਬਾਰੇ ਦੱਸੋ"
+          ]
+        },
+        {
+          "tag": "oat_info",
+          "answer_mode": "summary_plus_link",
+          "official_sources": ["https://gndec.ac.in/cultural/?q=facilities", "https://www.gndec.ac.in/"],
+          "patterns": [
+            "open air theatre",
+            "oat details",
+            "college oat",
+            "open air theatre in gndec",
+            "anand utsav venue",
+            "oat ke bare mei batao",
+            "ओपन एयर थिएटर",
+            "ਓਪਨ ਏਅਰ ਥੀਏਟਰ"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "library",
+      "name": "Library Queries",
+      "priority": "medium",
+      "intents": [
+        {
+          "tag": "library_access",
+          "answer_mode": "portal_redirect",
+          "official_sources": ["https://library.gndec.ac.in/?q=node/2", "https://gndec.ac.in/library/"],
+          "patterns": [
+            "library timing kya hai",
+            "how to access ebooks",
+            "opac link",
+            "late fine for books",
+            "how many books can i issue",
+            "library details"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "notices",
+      "name": "Notices and Updates",
+      "priority": "medium",
+      "intents": [
+        {
+          "tag": "latest_notices",
+          "answer_mode": "summary_plus_link",
+          "official_sources": ["https://www.gndec.ac.in/"],
+          "patterns": [
+            "latest college notices",
+            "circulars for students",
+            "any important announcement",
+            "latest notices",
+            "upcoming events",
+            "student notice board"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "portals",
+      "name": "ERP and Portal Queries",
+      "priority": "medium",
+      "intents": [
+        {
+          "tag": "academic_portal",
+          "answer_mode": "portal_redirect",
+          "official_sources": ["https://academics.gndec.ac.in/"],
+          "patterns": [
+            "how to login to erp",
+            "academic portal login",
+            "forgot password kaise reset kare",
+            "attendance kaise check kare",
+            "marks portal link",
+            "profile update kaise kare",
+            "erp login"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "placements",
+      "name": "Training and Placement",
+      "priority": "medium",
+      "intents": [
+        {
+          "tag": "placement_support",
+          "answer_mode": "summary_plus_link",
+          "official_sources": ["https://www.tnpgndec.com/"],
+          "patterns": [
+            "which companies are visiting for placements this month",
+            "minimum cgpa required for tcs drive",
+            "how do i register for training and placement portal",
+            "summer internship opportunities for it students",
+            "placement portal",
+            "tnp registration"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "documents",
+      "name": "Administrative Documents and Support",
+      "priority": "medium",
+      "intents": [
+        {
+          "tag": "student_documents",
+          "answer_mode": "summary_plus_link",
+          "official_sources": ["https://www.gndec.ac.in/"],
+          "patterns": [
+            "how can i apply for bonafide certificate",
+            "what is the process for branch change after 1st year",
+            "accounts branch phone number",
+            "where is central computer center",
+            "ccc location",
+            "documents process"
+          ]
+        },
+        {
+          "tag": "admin_document_approval",
+          "answer_mode": "summary_plus_link",
+          "official_sources": ["https://www.gndec.ac.in/", "https://academics.gndec.ac.in/"],
+          "patterns": [
+            "request document approval",
+            "request documents approval",
+            "document approval digitally",
+            "how to send document approval request",
+            "approve my bonafide request",
+            "document approval status",
+            "documents approval status",
+            "document approval process",
+            "documents approval process",
+            "administrator se document approve karwana hai",
+            "digital document approval",
+            "document approval ka process"
+          ]
+        },
+        {
+          "tag": "administrator_contact",
+          "answer_mode": "summary_plus_link",
+          "official_sources": ["https://www.gndec.ac.in/"],
+          "patterns": [
+            "talk to administrator",
+            "administrator contact",
+            "admin office contact",
+            "how can i contact administration",
+            "student administrator interaction",
+            "administrative support",
+            "administrator se baat karni hai",
+            "admin contact details"
+          ]
+        }
+      ]
+    }
+  ]
+}

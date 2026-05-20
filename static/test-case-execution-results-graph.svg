@@ -1,0 +1,63 @@
+<svg width="1700" height="920" viewBox="0 0 1700 920" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1700" y2="920" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#081220"/>
+      <stop offset="1" stop-color="#111D38"/>
+    </linearGradient>
+    <linearGradient id="ok" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#49D0C5"/>
+      <stop offset="1" stop-color="#269C9C"/>
+    </linearGradient>
+    <linearGradient id="minor" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#F6C453"/>
+      <stop offset="1" stop-color="#F38B49"/>
+    </linearGradient>
+    <linearGradient id="fail" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#F472B6"/>
+      <stop offset="1" stop-color="#EC4899"/>
+    </linearGradient>
+    <filter id="shadow2" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#020617" flood-opacity="0.42"/>
+    </filter>
+    <style>
+      .title { font: 700 42px 'Segoe UI', Arial, sans-serif; fill: #F8FAFC; }
+      .subtitle { font: 500 20px 'Segoe UI', Arial, sans-serif; fill: #C6D2F3; }
+      .axis { font: 700 18px 'Segoe UI', Arial, sans-serif; fill: #D7E3FF; }
+      .label { font: 700 20px 'Segoe UI', Arial, sans-serif; fill: #F8FAFC; }
+      .value { font: 700 18px 'Segoe UI', Arial, sans-serif; fill: #F8FAFC; }
+    </style>
+  </defs>
+
+  <rect width="1700" height="920" fill="url(#bg2)"/>
+  <circle cx="1480" cy="120" r="180" fill="#213A7B" opacity="0.14"/>
+  <circle cx="180" cy="780" r="190" fill="#1C3270" opacity="0.13"/>
+
+  <text x="86" y="88" class="title">Test Case Execution Results Graph</text>
+  <text x="86" y="124" class="subtitle">Short and clear report version</text>
+
+  <line x1="180" y1="740" x2="1480" y2="740" stroke="#C0D2FF" stroke-width="4"/>
+  <line x1="180" y1="220" x2="180" y2="740" stroke="#C0D2FF" stroke-width="4"/>
+
+  <line x1="180" y1="610" x2="1480" y2="610" stroke="#425A92" stroke-width="2"/>
+  <line x1="180" y1="480" x2="1480" y2="480" stroke="#425A92" stroke-width="2"/>
+  <line x1="180" y1="350" x2="1480" y2="350" stroke="#425A92" stroke-width="2"/>
+
+  <text x="132" y="748" class="axis">0</text>
+  <text x="122" y="618" class="axis">5</text>
+  <text x="112" y="488" class="axis">10</text>
+  <text x="112" y="358" class="axis">15</text>
+
+  <rect x="360" y="324" width="180" height="416" rx="18" fill="url(#ok)" filter="url(#shadow2)"/>
+  <text x="420" y="304" class="value">16</text>
+  <text x="378" y="780" class="label">Passed</text>
+
+  <rect x="760" y="558" width="180" height="182" rx="18" fill="url(#minor)" filter="url(#shadow2)"/>
+  <text x="820" y="538" class="value">7</text>
+  <text x="735" y="780" class="label">Minor Issues</text>
+
+  <rect x="1160" y="662" width="180" height="78" rx="18" fill="url(#fail)" filter="url(#shadow2)"/>
+  <text x="1226" y="642" class="value">3</text>
+  <text x="1210" y="780" class="label">Failed</text>
+
+  <text x="640" y="846" class="axis">Sample execution summary for report presentation</text>
+</svg>
