@@ -17,9 +17,9 @@ A clean Flask GNDEC helper chatbot with:
 - `data/gndec_intent_dataset.json`: categorized seed intent dataset with sample queries and official source mapping
 
 ## Run
-py -m venv venv
-venv\Scripts\activate
-py -m pip install -r requirements.txt
-py app.py
+py -m venv venv </br>
+venv\Scripts\activate </br>
+py -m pip install -r requirements.txt </br>
+py app.py </br>
 
 Open http://127.0.0.1:5000
