@@ -1,5 +1,7 @@
 # GNDEC Chatbot Fresh Project
 
+Live Demo Link: https://my-college-chatbot-eight.vercel.app/
+
 A clean Flask GNDEC helper chatbot with:
 - dark modern UI
 - multilingual selector
