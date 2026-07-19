@@ -2,7 +2,7 @@
 import os
 
 # --- AI CONFIGURATION ---
-GEMINI_API_KEY = (os.getenv("GEMINI_API_KEY") or "AIzaSyCiaqCzFUB0Ht2qwRv9znoWd7vdIRnFWVAc").strip()
+GEMINI_API_KEY = (os.getenv("GEMINI_API_KEY") or "").strip()
 
 # --- COLLEGE LINKS ---
 GNDEC = {
